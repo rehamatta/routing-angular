@@ -1,0 +1,61 @@
+<section>
+  <div class="container">
+    <div class="form-container">
+      <h1>Contact section</h1>
+      <div class="star mb-3 mt-3"><i class="fa-solid fa-star"></i></div>
+      <form>
+        <div class="form-group">
+          <label #el1 for="userName" class="opacity-0">userName: </label>
+          <input
+            [(ngModel)]="userName"
+            (input)="showLabel(el1, userName)"
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="userName"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label #el2 class="opacity-0" for="userAge">userAge: </label>
+          <input
+            [(ngModel)]="userAge"
+            (input)="showLabel(el2, userAge)"
+            type="number"
+            id="userAge"
+            name="userAge"
+            placeholder="userAge"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label #el3 class="opacity-0" for="userEmail">userEmail: </label>
+          <input
+            [(ngModel)]="userEmail"
+            (input)="showLabel(el3, userEmail)"
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            placeholder="userEmail"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label #el4 class="opacity-0" for="userPassword"
+            >userPassword:
+          </label>
+          <input
+            [(ngModel)]="userPassword"
+            (input)="showLabel(el4, userPassword)"
+            type="password"
+            id="userPassword"
+            name="userPassword"
+            placeholder="userPassword"
+            required
+          />
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>

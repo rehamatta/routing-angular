@@ -1,0 +1,113 @@
+:host {
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+}
+section {
+  margin-top: 130px;
+  padding: 80px 20px;
+  font-family: "Roboto", Segoe UI;
+}
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.form-container h1 {
+  text-align: center;
+  color: var(--second-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--main-color);
+  font-size: 0.9rem;
+  transition: all 0.7s;
+}
+.move {
+  position: relative;
+  top: -8px;
+  transition: all 0.7s;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.form-group input:focus {
+  border-color: #1abc9c;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+.star {
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+}
+
+.star::after,
+.star::before {
+  content: "";
+  background-color: var(--second-color);
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+}
+
+.star::after {
+  left: 53%;
+}
+
+.star::before {
+  right: 53%;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 15px;
+  }
+
+  .form-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-group input {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .star::after {
+    left: 57%;
+  }
+  .star::before {
+    right: 57%;
+  }
+}

@@ -1,0 +1,71 @@
+:host {
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+}
+
+section {
+  padding: 220px 0;
+  margin-top: 130px;
+  font-family: "Roboto", Segoe UI;
+  background-color: var(--main-color);
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.star {
+  margin: 20px 0;
+  position: relative;
+}
+
+.star::after,
+.star::before {
+  content: "";
+  background-color: white;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+}
+
+.star::after {
+  left: 53%;
+}
+
+.star::before {
+  right: 53%;
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 80px 15px;
+  }
+
+  .star::after {
+    left: 57%;
+  }
+
+  .star::before {
+    right: 57%;
+  }
+  .row > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 10px;
+  }
+
+  .star::after,
+  .star::before {
+    width: 60px;
+  }
+
+  .row > div {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,54 @@
+:host {
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+}
+nav {
+  min-height: 130px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  font-family: "Roboto", Segoe UI;
+  width: 100%;
+  background-color: var(--second-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+nav.small {
+  min-height: 100px;
+  transition: all 0.5s;
+}
+.nav-bg {
+  background-color: var(--main-color);
+  padding: 15px;
+  border-radius: 10px;
+}
+.logo {
+  font-size: 45px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+
+@media (max-width: 992px) {
+  ul li {
+    margin: 10px;
+    text-align: center;
+  }
+  ul li a {
+    display: block;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .bars {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,57 @@
+:host {
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+}
+section {
+  padding: 110px 0;
+  margin-top: 130px;
+  font-family: "Roboto", Segoe UI;
+  background-color: var(--main-color);
+  text-align: center;
+  color: white;
+}
+section div p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.image {
+  text-align: center;
+  width: 250px;
+}
+.star {
+  margin: 15px 0;
+  position: relative;
+}
+.star::after {
+  content: "";
+  background-color: white;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 53%;
+}
+.star::before {
+  content: "";
+  background-color: white;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: 53%;
+}
+
+@media (max-width: 1200px) {
+  .star::after {
+    top: 50%;
+    left: 57%;
+  }
+  .star::before {
+    top: 50%;
+    right: 57%;
+  }
+}
