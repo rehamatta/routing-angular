@@ -9,8 +9,50 @@ section {
   font-family: "Roboto", Segoe UI;
   background-color: var(--main-color);
   color: white;
+  overflow: hidden;
+}
+.animate-top {
+  animation: slideInTop 1s ease-out forwards;
+}
+.animate-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+.animate-right {
+  animation: slideInRight 1s ease-out forwards;
 }
 
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 h1 {
   font-weight: 700;
 }

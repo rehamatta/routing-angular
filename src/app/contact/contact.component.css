@@ -7,6 +7,20 @@ section {
   padding: 80px 20px;
   font-family: "Roboto", Segoe UI;
 }
+.animate-top {
+  animation: slideInTop 1s ease-out forwards;
+}
+@keyframes slideInTop {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .form-container {
   width: 80%;
   margin: 0 auto;

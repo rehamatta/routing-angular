@@ -10,6 +10,34 @@ section {
   text-align: center;
   color: white;
 }
+
+.animated-from-top {
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: slideFromTop 1s ease-out forwards;
+}
+
+.animated-from-bottom {
+  transform: translateY(100px);
+  opacity: 0;
+  animation: slideFromBottom 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slideFromTop {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottom {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 section div p {
   margin: 0;
   padding: 0;
