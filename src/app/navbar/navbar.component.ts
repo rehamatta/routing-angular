@@ -21,5 +21,12 @@ export class NavbarComponent {
     }
 
   }
+  closeNavbar(): void {
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove('show'); // This will collapse the navbar
+    }
+  }
+
 
 }

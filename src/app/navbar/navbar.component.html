@@ -2,7 +2,9 @@
   <div class="container m-auto nav-content">
     <div class="bars">
       <div>
-        <a class="logo text-nowrap" routerLink="/home">Start Framework</a>
+        <a class="logo text-nowrap" routerLink="/home" (click)="closeNavbar()"
+          >Start Framework</a
+        >
       </div>
       <div>
         <button
@@ -21,13 +23,28 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <a routerLinkActive="nav-bg" routerLink="/about">about</a>
+          <a
+            routerLinkActive="nav-bg"
+            routerLink="/about"
+            (click)="closeNavbar()"
+            >about</a
+          >
         </li>
         <li class="nav-item">
-          <a routerLinkActive="nav-bg" routerLink="/portfolio">portfolio</a>
+          <a
+            routerLinkActive="nav-bg"
+            routerLink="/portfolio"
+            (click)="closeNavbar()"
+            >portfolio</a
+          >
         </li>
         <li class="nav-item">
-          <a routerLinkActive="nav-bg" routerLink="/contact">contact</a>
+          <a
+            routerLinkActive="nav-bg"
+            routerLink="/contact"
+            (click)="closeNavbar()"
+            >contact</a
+          >
         </li>
       </ul>
     </div>
