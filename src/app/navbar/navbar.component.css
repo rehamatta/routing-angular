@@ -3,7 +3,7 @@
   --second-color: #2c3e50;
 }
 nav {
-  min-height: 130px;
+  min-height: 10px;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -15,10 +15,6 @@ nav {
   transition: all 0.5s;
 }
 
-nav.small {
-  min-height: 100px;
-  transition: all 0.5s;
-}
 .nav-bg {
   background-color: var(--main-color);
   padding: 15px;

@@ -8,18 +8,14 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  isScrolledDown: boolean = false;
+  isScrolledDown = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-    if (scrollTop !== 0) {
+  @HostListener('window:scroll') onWindowScroll() {
+    if(scrollY > 0) {
       this.isScrolledDown = true;
     } else {
       this.isScrolledDown = false;
     }
-
   }
   closeNavbar(): void {
     const navbarCollapse = document.getElementById('navbarNav');
